@@ -98,9 +98,8 @@
 
 
 % 练习、证明环境
-\newcounter{exercise}[subsection]
-\renewcommand{\theexercise}{\thesubsection.\arabic{exercise}}
-\newenvironment{proof}{\par\noindent\textbf{\color{second}\proofname:}\ \itshape}{\par}
+\newcounter{exercise}[section]
+\renewcommand{\theexercise}{\thesection.\arabic{exercise}}
 \newenvironment{exercise}[1][]{%
     \par\refstepcounter{exercise}%
     \noindent{\songti\color{main}\exercisename\ \theexercise #1}\ \rmfamily %
