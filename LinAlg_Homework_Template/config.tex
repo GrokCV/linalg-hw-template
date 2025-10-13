@@ -1,0 +1,119 @@
+% ===================================================================
+%  config.tex -- The All-in-One Style & Info Configuration File
+% ===================================================================
+
+% --- PART 1: CORE PACKAGES ---
+\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=3cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\usepackage{amsmath, amssymb}
+\usepackage{tikz}
+\usetikzlibrary{shadows}
+\usepackage[shortlabels]{enumitem}
+\usepackage[many]{tcolorbox}
+\usepackage{pifont, bbding}
+
+
+% --- PART 2: USER INFORMATION AREA (WITH DEFAULTS) ---
+\providecommand{\CourseInfo}{（请在main.tex中填写课程信息）}
+\providecommand{\CourseName}{（课程名）}
+\providecommand{\InstructorName}{（教师名）}
+\providecommand{\AssignmentTitle}{（作业标题）}
+\providecommand{\StudentName}{（请在main.tex中填写姓名）}
+\providecommand{\StudentID}{（请在main.tex中填写学号）}
+\providecommand{\StudentClass}{（请在main.tex中填写班级）}
+\providecommand{\AssignmentDate}{\today}
+
+
+
+
+% --- PART 3: HEADER, FOOTER, AND HYPERLINK SETUP ---
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\CourseName}
+\fancyhead[R]{主讲: \InstructorName}
+\fancyfoot[L]{课程主页：\href{https://grokcv.ai/teaching/}{https://grokcv.ai/teaching/}}
+\fancyfoot[C]{}
+\fancyfoot[R]{第 \thepage\ 页 / 共 \pageref{LastPage} 页}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\hypersetup{colorlinks, linkcolor=winered, citecolor=winered, urlcolor=winered}
+
+
+% --- PART 4: AUTOMATIC TITLE BLOCK COMMAND ---
+\newcommand{\makeHomeworkTitle}{%
+    \vspace*{0.2cm}
+    \begin{center}
+        {\huge \songti \bfseries \CourseInfo} \\ \vspace{1.5em} 
+        {\Large \songti \bfseries \AssignmentTitle} \\ \vspace{2.5em}
+    \end{center}
+    \noindent
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} ll}
+        \songti 姓名： \StudentName & \songti 班级： \StudentClass \\ 
+        \songti 学号： \StudentID & \songti 日期： \AssignmentDate \\ 
+    \end{tabular*}
+    \vspace{2em}\hrule\vspace{2em}
+}
+
+
+% --- PART 5: VISUAL STYLE SETUP (Colors, Theorems, Lists) ---
+% 核心颜色定义
+\definecolor{structurecolor}{RGB}{51,102,153}
+\definecolor{main}{RGB}{0,102,51}
+\definecolor{second}{RGB}{204,102,0}
+\definecolor{third}{RGB}{0,128,128}
+\definecolor{winered}{rgb}{0.5,0,0}
+
+% 定理、定义环境
+\renewcommand{\proofname}{证明}
+\newcommand{\definitionname}{定义}
+\newcommand{\theoremname}{定理}
+\newcommand{\exercisename}{练习}
+\newcommand{\hintname}{提示 \ding{182}}
+
+% 1统一使用宋体 (fontupper={\songti ...})
+\tcbset{
+    common/.style={fontupper={\songti\fontseries{m}\selectfont}, coltitle=white, colback=gray!5, boxrule=0.5pt, fonttitle=\songti, enhanced, breakable, top=8pt, before skip=10pt, after skip=10pt, attach boxed title to top left={yshift=-0.1in, xshift=0.15in}, boxed title style={boxrule=0pt, colframe=white, arc=0pt, outer arc=0pt}, separator sign={.}},
+    defstyle/.style={common, colframe=main, colback=main!5, colbacktitle=main},
+    thmstyle/.style={common, colframe=second, colback=second!5, colbacktitle=second},
+    hintstyle/.style={common, colframe=third, colback=third!5, colbacktitle=third}
+}
+\DeclareTColorBox[auto counter, number within=section]{definition}{ o m }{defstyle, IfValueTF={#1}{title={\definitionname~\thetcbcounter\ (#1)}}{title={\definitionname~\thetcbcounter}}, IfValueT={#2}{label={#2}}}
+\DeclareTColorBox[auto counter, number within=section]{theorem}{ o m }{thmstyle, IfValueTF={#1}{title={\theoremname~\thetcbcounter\ (#1)}}{title={\theoremname~\thetcbcounter}}, IfValueT={#2}{label={#2}}}
+
+\newenvironment{hint}[1][]{%
+    \def\temphintarg{#1}%
+    \def\tempempty{}%
+    \ifx\temphintarg\tempempty
+        \begin{tcolorbox}[hintstyle, title={\hintname}]
+    \else
+        \begin{tcolorbox}[hintstyle, title={\hintname~(#1)}]
+    \fi
+}{%
+    \end{tcolorbox}
+}
+
+
+% 练习、证明环境
+\newcounter{exercise}[subsection]
+\renewcommand{\theexercise}{\thesubsection.\arabic{exercise}}
+\newenvironment{proof}{\par\noindent\textbf{\color{second}\proofname:}\ \itshape}{\par}
+\newenvironment{exercise}[1][]{%
+    \par\refstepcounter{exercise}%
+    \noindent{\songti\color{main}\exercisename\ \theexercise #1}\ \rmfamily %
+}{%
+    \par\ignorespacesafterend
+}
+
+% 2. [新增] 作答范例专用环境 (不带编号)
+\newenvironment{exampleexercise}[1][]{%
+    \par\noindent{\songti\color{main}\textbf{#1}}\ \rmfamily %
+}{%
+    \par\ignorespacesafterend
+}
+
+
+% --- End of config.tex ---
