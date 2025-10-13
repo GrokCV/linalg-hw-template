@@ -1,4 +1,4 @@
-# linalg-homework
+# linalg-hw-template
 
 ---
 
