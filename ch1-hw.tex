@@ -1,0 +1,301 @@
+% !TEX program = xelatex
+% ===================================================================
+% 《线性代数》课程作业模板
+% ===================================================================
+%
+%  【学生使用说明】
+%  1. 在下方的【学生信息区】将 "请在此处填写..." 替换为你的真实信息。
+%  2. 注意：以下所有题目均为模板占位符，请自己输入实际的题目，并作答.
+%
+% ===================================================================
+
+
+\documentclass[a4paper, 12pt]{ctexart}
+
+\usepackage{mathdots}
+\usepackage{mathtools} % 加载 mathtools 会自动加载 amsmath
+
+% --- 课程信息 (通常无需修改) ---
+\newcommand{\CourseInfo}{线性代数} % 用于标题行的大标题
+\newcommand{\CourseName}{线性代数·2025秋·第 X 章}               % 用于页眉左边
+\newcommand{\InstructorName}{戴一冕}
+\newcommand{\AssignmentTitle}{第 1 章 \quad xxx}
+
+% ===================================================================
+%  第一步：请在这里填写你的学生信息
+% ===================================================================
+\newcommand{\StudentName}{xxx}
+\newcommand{\StudentID}{xxxxxx}
+\newcommand{\StudentClass}{计网模拟1-3班}
+\newcommand{\AssignmentDate}{2025年10月13日} % 默认是提交日期
+
+% --- 导入所有配置 (请勿修改) ---
+\input{config.tex}
+
+% ===================================================================
+%  正文开始
+% ===================================================================
+\begin{document}
+
+% --- 生成标题区 ---
+\makeHomeworkTitle
+
+% --- 说明框 ---
+% \begin{tcolorbox}[
+%     hintstyle,
+%     colframe=winered, 
+%     colback=winered!5!white, 
+%     colbacktitle=winered, 
+%     fontupper=\bfseries, 
+%     title={\textbf{重要说明}}
+% ]
+%     以下所有题目均为模板占位符，请自己输入实际的题目，并作答
+% \end{tcolorbox}
+
+% ===================================================================
+%  作业题目区
+% ===================================================================
+\section{第1题}
+
+\begin{exercise}
+    计算下列各排类的逆序数，从而判定是奇排列还是偶排列：\\
+    
+    $(2) \quad 631254$ \\
+    
+     $(4) \quad 135 \cdots (2n-1)246 \cdots (2n)$
+\end{exercise}~\\
+
+\noindent\textbf{解：}
+
+
+\section{第5题}
+\begin{exercise}
+写出四阶行列式中含因子$a_{23}$且带负号的项
+
+\end{exercise}~\\
+\noindent\textbf{解：}
+
+\section{第6题}
+\begin{exercise}
+利用行列式的定义计算\\
+
+
+$
+(2) \quad 
+\begin{bmatrix}
+ a_{11}& a_{12} &a_{13}  & a_{14} &a_{15} \\
+ a_{21}& a_{21} & a_{23} & a_{24} & a_{25}\\
+ a_{31}& a_{31} & 0 & 0 & 0\\
+ a_{41}& a_{41} & 0 & 0 & 0\\
+ a_{51}& a_{51} & 0 & 0 & 0
+\end{bmatrix}$~\\~\\
+
+
+$(4) \quad \begin{bmatrix}
+  x&y  &0  &0  &0 \\
+  0&x  &y  &0  &0 \\
+  0&0  &x  &y  &0 \\
+  0&0  &0  &x  &y \\
+  y&0  &0  &0  &x
+\end{bmatrix}$
+
+\end{exercise}~\\
+\noindent\textbf{解：}
+
+
+
+\section{第7题}
+\begin{exercise}
+若 $n$ 阶行列式 $\det(a_{ij})$ 为零的元多于 $n^{2}-n$ 个，则 $\det(a_{ij})=0$
+\end{exercise}~\\
+\noindent\textbf{解：}
+
+\section{第8题}
+\begin{exercise}
+利用行列式的性质计算\\
+
+$(2) \quad \begin{vmatrix}
+  3&  1& 1& 1\\
+  1&  3& 1& 1\\
+  1&  1& 3& 1\\
+  1&  1& 1& 3
+\end{vmatrix}$\\~\\
+
+$(3) \quad \begin{vmatrix}
+  a&  b&  c& 1\\
+  b&  c&  a& 1\\
+  c&  a&  b& 1\\
+  \frac{b+c}{2}&  \frac{c+a}{2}&  \frac{a+b}{2}& 1
+\end{vmatrix}$
+\end{exercise}~\\
+\noindent\textbf{解：}
+
+\section{第10题}
+\begin{exercise}
+不展开行列式，证明下列等式成立：\\
+
+$\begin{bmatrix}
+ \sin^{2}\alpha& \cos^{2}\alpha  &\cos2\alpha  \\
+ \sin^{2}\beta & \cos^{2}\beta   &\cos2\beta  \\
+ \sin^{2}\gamma& \cos^{2}\gamma  &\cos2\gamma 
+\end{bmatrix}$=0
+\end{exercise}~\\
+
+\noindent\textbf{解：}
+
+
+\section{第11题}
+\begin{exercise}
+计算下列行列式的值：\\
+
+$(1) \quad \begin{bmatrix*}[l]
+  a &  b    &  c & d \\
+  a &  a+b  &  a+b+c & a+b+c+d \\
+  a &  2a+b &  3a+2b+c & 4a+3b+2c+d \\
+  a &  3a+b &  6a+3b+c & 10a+6b+3c+d
+\end{bmatrix*}$\\~\\
+
+$(4) \quad \begin{bmatrix}
+  a_{1}-b_{1} & a_{1}-b_{2}& ...   & a_{1}-b_{n}\\
+  a_{2}-b_{1}& a_{2}-b_{2} & ...&a_{2}-b_{n} \\
+  a_{3}-b_{1}& a_{3}-b_{2} & ... & a_{3}-b_{n}\\
+  ...& ... &  & ...\\
+  a_{n}-b_{1}& a_{n}-b_{2} & ... &a_{n}-b_{n}
+\end{bmatrix}$\\~\\
+
+$(6) \quad \begin{bmatrix}
+  x_{1}-m & x_{2} & ... & x_{n} \\
+ x_{1} &  x_{2}-m&  ...& x_{n}  \\
+  \vdots & \vdots  &  & \vdots  \\
+ x_{1} &  x_{2}&  ...&x_{n}-m
+\end{bmatrix}$
+\end{exercise}~\\
+\noindent\textbf{解：}
+
+
+\section{第13题}
+\begin{exercise}
+计算下列 $n$ 阶行列式的值：\\
+
+
+$(2) \quad \begin{vmatrix}
+ 1 & 2 & 3 & \cdots & n-1 & n\\
+ 1 & -1 & 0 & \cdots & 0 & 0\\
+ 0 & 2 & -2 & \cdots & 0 & 0\\
+ \vdots & \vdots & \vdots &   &\vdots &\vdots \\
+ 0 & 0 & 0 & \cdots &n-1 &1-n
+\end{vmatrix}$
+\end{exercise}~\\
+\noindent\textbf{解：}
+
+
+\section{第14题}
+\begin{exercise}
+证明下列等式：\\
+
+$(3) \quad \begin{vmatrix}
+ a+x_{1}  &a  &a  & \cdots &a  &a \\
+ a & a+x_{2}  & a & \cdots  & a & a\\
+\vdots & \vdots & \vdots  &  & \vdots & \vdots\\
+ a & a & a & \cdots & a+x_{n}  & a \\
+  a& a & a & \cdots & a &a\\
+  \end{vmatrix}= ax_{1}x _{2} \cdots x_{n} ;\\
+$\\
+
+  
+
+$(4) \quad \begin{vmatrix}
+a_{0}  & -1 & 0 &  \cdots & 0 & 0\\
+ a_{1}  & x & -1 & \cdots &  0& 0\\
+\vdots & \vdots & \vdots &  & \vdots & \vdots\\
+a_{n-2}  & 0 & 0 & \cdots & x & -1\\
+ a_{n-1}  & 0 & 0 & \cdots & 0 & x\\
+\end{vmatrix}= a_{0} x^{n-1} +a_{1} x^{n-2} + \cdots +a_{n-1} .
+$
+\end{exercise}~\\
+\noindent\textbf{解：}
+
+\section{第15题}
+\begin{exercise}
+利用拉普拉斯定理计算行列式的值：
+
+
+% $\left| A \right| = \begin{vmatrix}
+% a &   &  &  &  &  &  & b\\
+%   & a &  &  &  &  & b & \\
+%   &   & \ddots &  &  &  \iddots&  & \\
+%   &   &  & a & b &  &  & \\
+%   &   &  &  b& a &  & &\\
+%   &   & \iddots &  &  & \ddots &  &\\
+%   & b &  &  &  &  & a & \\
+% b &   &  &  &  &  &  &a
+% \end{vmatrix}$
+
+
+$
+(4) \quad \left| A \right| =
+\left|
+  \begin{array}{cccccccc}
+    a &   &         &   &   &         &   & b \\
+      & a &         &   &   &         & b &   \\
+      &   & \ddots  &   &   & \iddots &   &   \\
+      &   &         & a & b &         &   &   \\
+      &   &         & b & a &         &   &   \\
+      &   & \iddots &   &   &  \ddots &   &   \\
+      & b &         &   &   &         & a &   \\
+    b &   &         &   &   &         &   & a \\
+  \end{array}
+\right|
+\begin{array}{c}
+    \left. \vphantom{
+        \begin{array}{c} a \\ a \\ \vdots \\ a \end{array}
+    } \right\} \text{$n$ 行} \\
+    \left. \vphantom{
+        \begin{array}{c} a \\ a \\ \vdots \\ a \end{array}
+    } \right\} \text{$n$ 行}
+\end{array}
+$ （空白处的元均为 0）.
+
+% \begin{vmatrix}
+% A
+% \end{vmatrix}=\begin{vmatrix}
+%   a&  &  &  &  &  &  & b\\
+%   & a &  &  &  &  & b & \\
+%   &  & ... &  &  &  ...&  & \\
+%   &  &  & a & b &  &  & \\
+%   &  &  &  b& a &  & &\\
+%   &  & ... &  &  & ... &  &\\
+%   & b &  &  &  &  & a & \\
+%   b&  &  &  &  &  &  &a
+% \end{vmatrix}(2n行)(空白处的元均为0)
+\end{exercise}~\\
+\noindent\textbf{解：}
+
+
+\section{第16题}
+\begin{exercise}
+设 $P(x) = \begin{bmatrix}
+ 1 &  x& x^{2}  & \cdots  &x^{n-1} \\
+  1& a_{1} &  a_{1} ^{2}& \cdots &a_{1} ^{n-1}\\
+ 1 & a_{2} &  a_{2}^{2}& \cdots &a_{2}^{n-1} \\
+ \cdots & \cdots &  \cdots &  & \cdots\\
+ 1 & a_{n-1} & a_{n-1}^{2} & \cdots &a_{n-1}^{n-1}
+\end{bmatrix}$, 其中 $a_{1}, a_{2}, \cdots, a_{n-1}$ 为互不相同之实数.\\
+(1) 证明 $P(x)$ 是 $n-1$ 次多项式;\\
+(2) 求 $P(x)$ 的根.
+\end{exercise}~\\
+\noindent\textbf{解：}
+
+
+
+
+
+
+
+
+
+
+\end{document}
+% ===================================================================
+%  文档结束
+% ===================================================================
