@@ -1,0 +1,305 @@
+% !TEX program = xelatex
+% ===================================================================
+% 《线性代数》课程作业模板
+% ===================================================================
+%
+%  【学生使用说明】
+%  1. 在下方的【学生信息区】将 "请在此处填写..." 替换为你的真实信息。
+%  2. 注意：以下所有题目均为模板占位符，请自己输入实际的题目，并作答.
+%
+% ===================================================================
+
+
+\documentclass[a4paper, 12pt]{ctexart}
+
+% --- 课程信息 (通常无需修改) ---
+\newcommand{\CourseInfo}{线性代数} % 用于标题行的大标题
+\newcommand{\CourseName}{线性代数·2025秋·第 2 章}               % 用于页眉左边
+\newcommand{\InstructorName}{戴一冕}
+\newcommand{\AssignmentTitle}{第 2 章 \quad 矩阵代数}
+
+% ===================================================================
+%  第一步：请在这里填写你的学生信息
+% ===================================================================
+\newcommand{\StudentName}{xxx}
+\newcommand{\StudentID}{xxxxxx}
+\newcommand{\AssignmentDate}{2025年xx月xx日} % 默认是提交日期
+
+% --- 导入所有配置 (请勿修改) ---
+\input{config.tex}
+
+% ===================================================================
+%  正文开始
+% ===================================================================
+\begin{document}
+
+\makeHomeworkTitle
+
+% ===================================================================
+%  作业题目区
+% ===================================================================
+\section{第2题}
+\begin{exercise}[1]
+    设$\alpha_{1} = \left (  1,1,1,1\right )$,$\alpha_{2} = \left (  1,-1,+1,-1\right )$ ,$\alpha_{3} = \left ( 3,1,3,1 \right )$.\\
+    
+    $(1)$ $\quad$ 求$2\alpha_{1}$ + $\alpha_{2}$ - $\alpha_{3}$;\\
+
+    $(2)$ $\quad$ $\alpha_{3}$能表示成$\alpha_{1}$和$\alpha_{2}$的线性组合吗?
+    
+    
+\end{exercise}~\\
+
+\noindent\textbf{解：}
+
+
+\section{第4题}
+\begin{exercise}计算下列矩阵乘积.~\\
+
+
+$(1)$ $\begin{pmatrix}
+  3& -2\\
+  0&  1\\
+  2& 4\\
+  -1& 0 
+\end{pmatrix} 
+\begin{pmatrix}
+  2&  1& -1\\
+  0&  -1& 2
+\end{pmatrix} $~\\~\\
+
+$(4)$
+$\left ( x,y,1 \right ) 
+\begin{pmatrix}
+  a_{11}&  a_{12}& b_{1}\\
+  a_{21}&  a_{22}& b_{2}\\
+  b_{1}&  b_{2}& c
+\end{pmatrix}
+\begin{pmatrix}
+  x\\
+  y\\
+  1
+\end{pmatrix}
+\left ( a_{12} = a_{21} \right ) $
+
+\end{exercise}
+\noindent\textbf{解：}
+
+\section{第5题}
+\begin{exercise}
+设$A$ = $\begin{pmatrix}
+ 1 & 3\\
+ 2 & -1
+\end{pmatrix}$,
+$B$ = $\begin{pmatrix}
+ 3 & 0\\
+ 1 & 2
+\end{pmatrix}$,
+求$A^2$，$B^2$，$A^2B^2$与$(AB)^2$.
+\end{exercise}
+\noindent\textbf{解：}
+
+
+
+\section{第6题}
+\begin{exercise}
+求$A^n$(n为正整数).~\\
+
+$(3)$ $A$ = $\begin{pmatrix}
+ a & 1 & 0 & 0\\
+ 0 & a & 1 & 0\\
+ 0 & 0 & a & 1\\
+ 0 & 0 & 0 & a
+\end{pmatrix}$
+\end{exercise}
+\noindent\textbf{解：}
+
+\section{第7题}
+\begin{exercise}
+已知~\\
+\begin{center}
+$B$ = $\begin{pmatrix}
+ 1 & 4 & 2\\
+ 0 & -3 & 2\\
+ 0 & 4 & 3
+\end{pmatrix}$~\\
+\end{center}~\\
+
+$\hspace{1.5em}$证明$B^n$ = $\left\{\begin{matrix}
+ E,\text{当$n$为偶数,}\\
+ B,\text{当$n$为奇数.}
+\end{matrix}\right.$
+
+\end{exercise}
+\noindent\textbf{解：}
+
+\section{第8题}
+\begin{exercise}~\\
+
+ 证明两个 $n$ 阶上三角形矩阵的乘积仍为一上三角形矩阵.
+\end{exercise}
+
+\noindent\textbf{解：}
+
+
+\section{第14题}
+\begin{exercise}
+利用$\begin{vmatrix}
+AB
+\end{vmatrix} = 
+\begin{vmatrix}
+A
+\end{vmatrix}
+\begin{vmatrix}
+B
+\end{vmatrix}$
+计算下列行列式.~\\
+
+$(2)$ $\begin{vmatrix}
+ 1 & \cos(\alpha_{1}-\alpha_{2})  & \cos(\alpha_{1}-\alpha_{3}) & \cdots & \cos(\alpha_{1}-\alpha_{n})\\
+ \cos(\alpha_{1}-\alpha_{2}) & 1 & \cos(\alpha_{2}-\alpha_{3}) & \cdots & \cos(\alpha_{2}-\alpha_{n})\\
+ \cos(\alpha_{1}-\alpha_{3}) & \cos(\alpha_{2}-\alpha_{3}) & 1 & \cdots & \cos(\alpha_{3}-\alpha_{n})\\
+ \vdots & \vdots & \vdots &  & \vdots\\
+ \cos(\alpha_{1}-\alpha_{n}) & \cos(\alpha_{2}-\alpha_{n}) & \cos(\alpha_{3}-\alpha_{n}) & \cdots& 1
+\end{vmatrix}$
+\end{exercise}
+\noindent\textbf{解：}
+
+
+\section{第15题}
+\begin{exercise}
+求$A^{-1}$.~\\
+
+$(1)A$ = $\begin{pmatrix}
+ a & b\\
+ c & d
+\end{pmatrix}$\\~\\
+
+$(3)A$ = $\begin{pmatrix}
+ 1 & 2 & -3\\
+ 0 & 1 & 2\\
+ 0 & 0 & 1
+\end{pmatrix}$\\~\\
+
+$(6)A$ = $\begin{pmatrix}
+ 2 & 1 & 0 & 0 & 0\\
+ 0 & 2 & 1 & 0 & 0\\
+ 0 & 0 & 2 & 1 & 0\\
+ 0 & 0 & 0 & 2 & 1\\
+ 0 & 0 & 0 & 0 & 2
+\end{pmatrix}$
+\end{exercise}
+\noindent\textbf{解：}
+
+
+\section{第16题}
+\begin{exercise}
+解下列矩阵方程,求$X$.~\\
+
+$(2)X\begin{pmatrix}
+ 3 & 6\\
+ 4 & 8
+\end{pmatrix}$ = 
+$\begin{pmatrix}
+ 2 & 4\\
+ 9 & 18
+\end{pmatrix}$
+\end{exercise}
+\noindent\textbf{解：}
+
+\section{第17题}
+\begin{exercise}
+若$A$和$B$是同阶可逆矩阵,且$AB$ = $BA$,
+证明:$AB^{-1}$ = $B^{-1}A$，$A^{-1}B$ = $BA^{-1}$，$A^{-1}B^{-1}$ = $B^{-1}A^{-1}$.
+\end{exercise}
+\noindent\textbf{解：}
+
+
+\section{第20题}
+\begin{exercise}
+求一个二次多项式$f(x)$，使$f(1) = -1$，$f(-1) = 9$, $f(2) = 3 $.
+
+\end{exercise}
+\noindent\textbf{解：}
+
+
+\section{第21题}
+\begin{exercise}
+用适当的方法解下列方程组.~\\
+
+(1)$\left\{\begin{matrix}
+-x+y+z+t = a \\
+x-y+z+t = b \\
+x+y-z+t = c \\
+x+y+z-t = d
+\end{matrix}\right.$
+\end{exercise}
+\noindent\textbf{解：}
+
+\section{第23题}
+\begin{exercise}
+设$E_{ij}$，$E_{ii}$($c$)（$c\ne0$），$E_{ij}$($\lambda$)（$i\ne j$）为三种初等矩阵.~\\
+
+$(1)$求它们的转置矩阵$E_{ij}^T$，$(E_{ii}(c))^T$，$(E_{ij}(\lambda))^T$.~\\
+
+$(2)$试述$E_{ij}^TAE_{ij}$，$(E_{ii}(c))^TAE_{ii}(c)$，$(E_(ij)(\lambda))^TAE_{ij}(\lambda))$是分别对$A$施行了什么\\
+
+样的初等变换.
+\end{exercise}
+\noindent\textbf{解：}
+
+\section{第24题}
+\begin{exercise}
+证明可逆对称矩阵的逆矩阵也是对称矩阵.
+\end{exercise}
+\noindent\textbf{解：}
+
+\section{第25题}
+\begin{exercise}
+若$A$是$n$阶对称矩阵,$B$是$n$阶反称矩阵,试证:~\\
+
+$(1)A^2$,$B^2$及$AB- BA$都是对称矩阵;\\
+
+$(2)AB$是反称矩阵的充要条件是$AB = BA$.
+\end{exercise}
+\noindent\textbf{解：}
+
+\section{第29题}
+\begin{exercise}
+设~\\
+\begin{center}
+ $X$ = $\begin{pmatrix}
+ 0 & A\\
+ C & 0
+\end{pmatrix}$
+\end{center}~\\
+
+其中$A$,$C$为两个可逆矩阵,已知$A^{-1}$,$C^{-1}$,求$X^{-1}$.
+\end{exercise}
+\noindent\textbf{解：}
+
+\section{第31题}
+\begin{exercise}
+将下列各题矩阵分块后再计算:~\\
+
+$(2)$ $\begin{pmatrix}
+ 1 & 3 & 0 & 0 & 0\\
+ 2 & 8 & 0 & 0 & 0\\
+ 0 & 0 & 1 & 0 & 1\\
+ 0 & 0 & 2 & 3 & 2\\
+ 0 & 0 & 3 & 1 & 1
+\end{pmatrix}^{-1}$
+\end{exercise}
+\noindent\textbf{解：}
+
+
+
+
+
+
+
+
+
+\end{document}
+% ===================================================================
+%  文档结束
+% ===================================================================
