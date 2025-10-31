@@ -1,0 +1,109 @@
+% !TEX program = xelatex
+% ===================================================================
+% 《线性代数》课程作业模板
+% ===================================================================
+%
+%  【学生使用说明】
+%  1. 在下方的【学生信息区】将 "请在此处填写..." 替换为你的真实信息。
+%  2. 注意：以下所有题目均为模板占位符，请自己输入实际的题目，并作答.
+%
+% ===================================================================
+
+
+\documentclass[a4paper, 12pt]{ctexart}
+
+\usepackage{mathdots}
+\usepackage{mathtools} % 加载 mathtools 会自动加载 amsmath
+
+% --- 课程信息 (通常无需修改) ---
+\newcommand{\CourseInfo}{线性代数} % 用于标题行的大标题
+\newcommand{\CourseName}{线性代数·2025秋·第 6 章}               % 用于页眉左边
+\newcommand{\InstructorName}{戴一冕}
+\newcommand{\AssignmentTitle}{第 6 章 \quad 欧几里得空间}
+
+% ===================================================================
+%  第一步：请在这里填写你的学生信息
+% ===================================================================
+\newcommand{\StudentName}{xxx}
+\newcommand{\StudentID}{xxxxxxx}
+\newcommand{\AssignmentDate}{2025年xx月xx日} % 默认是提交日期
+
+% --- 导入所有配置 (请勿修改) ---
+\input{config.tex}
+
+% ===================================================================
+%  正文开始
+% ===================================================================
+\begin{document}
+
+% --- 生成标题区 ---
+\makeHomeworkTitle
+
+% --- 说明框 ---
+% \begin{tcolorbox}[
+%     hintstyle,
+%     colframe=winered, 
+%     colback=winered!5!white, 
+%     colbacktitle=winered, 
+%     fontupper=\bfseries, 
+%     title={\textbf{重要说明}}
+% ]
+%     以下所有题目均为模板占位符，请自己输入实际的题目，并作答
+% \end{tcolorbox}
+
+% ===================================================================
+%  作业题目区
+% ===================================================================
+\section{第1题}
+
+\begin{exercise}
+设 \( V \) 是由全体 \( n \) 阶对称矩阵关于通常矩阵的线性运算构成的实线性空间，对于任意的 \( A, B \in V \)，定义  
+\[ \langle A, B \rangle = \text{Tr}(AB) \]
+(记号 \(\text{Tr} \, A = n\) 阶矩阵 \( A \) 主对角线上各元之和，称为矩阵 \( A \) 的迹).证明这样定义的 \(\langle A, B \rangle\) 是 \( V \) 中的一个内积.
+\end{exercise}~\\
+
+\noindent\textbf{证明：}\\
+
+
+\section{第7题}
+\begin{exercise}
+设 $[\varepsilon _1, \varepsilon _2, \varepsilon _3, \varepsilon _4, \varepsilon _5]$ 是五维欧氏空间 $V$ 的一个标准正交基，$V_1 = L(\alpha_1,\alpha_2,\alpha_3)$ 是由 $\alpha_1, \alpha_2, \alpha_3$ 生成的子空间，其中 $\alpha_1 = \varepsilon _1 + \varepsilon _5, \alpha_2 = \varepsilon _1 - \varepsilon _2 + \varepsilon _4, \alpha_3 = 3\varepsilon _1 + \varepsilon _2 + \varepsilon _3.$
+求 $V_1$ 的一个标准正交基 $[e_1, e_2, e_3]$.
+\end{exercise}~\\
+\noindent\textbf{解：}~\\
+
+\section{第8题}
+\begin{exercise}
+试求五维向量 $\alpha, \beta$，它们要满足条件：
+
+(1) $\alpha$ 与 $\beta$ 正交；
+
+(2) 它们均与矩阵
+\[
+\begin{pmatrix}
+1 & 1 & 1 & 2 & 1 \\
+1 & 0 & 0 & 1 & -2 \\
+2 & 1 & -1 & 0 & 2
+\end{pmatrix}
+\]
+$\hspace{3.3em}$的各行向量正交.
+\end{exercise}~\\
+\noindent\textbf{解：}\\
+
+\section{第10题}
+\begin{exercise}
+在多项式空间 \( P_2[x] \) 内，定义内积为
+
+\[
+\langle f(x), g(x) \rangle = \int_{0}^{1} f(x)g(x)  dx,
+\]~
+
+$\hspace{1.6em}$试由基 \([1, x, x^2]\) 利用正交化方法构造出一个正交基.
+\end{exercise}~\\
+\noindent\textbf{解：}\\
+
+
+\end{document}
+% ===================================================================
+%  文档结束
+% ===================================================================

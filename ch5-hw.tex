@@ -1,0 +1,206 @@
+% !TEX program = xelatex
+% ===================================================================
+% 《线性代数》课程作业模板
+% ===================================================================
+%
+%  【学生使用说明】
+%  1. 在下方的【学生信息区】将 "请在此处填写..." 替换为你的真实信息。
+%  2. 注意：以下所有题目均为模板占位符，请自己输入实际的题目，并作答.
+%
+% ===================================================================
+
+
+\documentclass[a4paper, 12pt]{ctexart}
+
+\usepackage{mathdots}
+\usepackage{mathtools} % 加载 mathtools 会自动加载 amsmath
+
+% --- 课程信息 (通常无需修改) ---
+\newcommand{\CourseInfo}{线性代数} % 用于标题行的大标题
+\newcommand{\CourseName}{线性代数·2025秋·第 5 章}               % 用于页眉左边
+\newcommand{\InstructorName}{戴一冕}
+\newcommand{\AssignmentTitle}{第 5 章 \quad 线性变换}
+
+% ===================================================================
+%  第一步：请在这里填写你的学生信息
+% ===================================================================
+\newcommand{\StudentName}{xxx}
+\newcommand{\StudentID}{xxxxxxx}
+\newcommand{\AssignmentDate}{2025年xx月xx日} % 默认是提交日期
+
+% --- 导入所有配置 (请勿修改) ---
+\input{config.tex}
+
+% ===================================================================
+%  正文开始
+% ===================================================================
+\begin{document}
+
+% --- 生成标题区 ---
+\makeHomeworkTitle
+
+% --- 说明框 ---
+% \begin{tcolorbox}[
+%     hintstyle,
+%     colframe=winered, 
+%     colback=winered!5!white, 
+%     colbacktitle=winered, 
+%     fontupper=\bfseries, 
+%     title={\textbf{重要说明}}
+% ]
+%     以下所有题目均为模板占位符，请自己输入实际的题目，并作答
+% \end{tcolorbox}
+
+% ===================================================================
+%  作业题目区
+% ===================================================================
+\section{第1题}
+
+\begin{exercise}
+下列变换中哪些是线性变换：
+
+(3) 在$R^{3}$中, 令$T(x_1,x_2,x_3)=(x_1^2,x_2+x_3,x_3^2)$;
+
+(4) 在空间$P[x]$中, 变换$T$为$T:f(x) \to f(x+1)$, 其中$f(x)$为$P[x]$中的任意多项式;
+\end{exercise}~\\
+
+\noindent\textbf{解：}\\
+
+
+\section{第4题}
+\begin{exercise}
+设$T$是线性空间$V$中的线性变换，$\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$是$V$中$n$个线性无关的向量，问$T\alpha_{1},T\alpha_{2},\cdots,T\alpha_{n}$也一定线性无关吗？试举例说明.
+\end{exercise}~\\
+\noindent\textbf{解：}~\\
+
+\section{第5题}
+\begin{exercise}
+5. 求下列各题中的线性变换在指定基下的矩阵：
+
+(4) 在$R^{3}$中，线性变换$T$满足条件：$T\alpha_{1}=(-5,0,3)$，$T\alpha_{2}=(0,-1,6)$，$T\alpha_{3}=(-5,-1,9)$，这里$\alpha_{1}=(-1,0,2)$，$\alpha_{2}=(0,1,1)$，$\alpha_{3}=(3,-1,0)$，求$T$在基$[\alpha_{1},\alpha_{2},\alpha_{3}]$下的矩阵;
+\end{exercise}~\\
+\noindent\textbf{解：}\\
+
+\section{第8题}
+\begin{exercise}
+在由全体二阶对称矩阵关于通常矩阵的线性运算所构成的三维线性空间
+\[
+V_{3}=\left\{
+\left(\begin{array}{cc}
+x_{1} & x_{2} \\
+x_{2} & x_{3}
+\end{array}\right) : x_{1}, x_{2}, x_{3} \in R
+\right\}
+\]
+中,令变换$T$为
+\[
+T A=\left(\begin{array}{cc}
+1 & 0 \\
+1 & 1
+\end{array}\right) A\left(\begin{array}{cc}
+1 & 1 \\
+0 & 1
+\end{array}\right), \quad A \in V_{3}.
+\]
+
+(1) 证明$T$为线性变换;
+
+(2) 求$T$在基$\left[A_{1}, A_{2}, A_{3}\right]$下的矩阵,其中
+\[
+A_{1}=\left(\begin{array}{cc}
+1 & 0 \\
+0 & 0
+\end{array}\right), \quad 
+A_{2}=\left(\begin{array}{cc}
+0 & 1 \\
+1 & 0
+\end{array}\right), \quad 
+A_{3}=\left(\begin{array}{cc}
+0 & 0 \\
+0 & 1
+\end{array}\right).
+\]
+\end{exercise}~\\
+\noindent\textbf{解：}\\
+
+\section{第9题}
+\begin{exercise}
+若$\left[\alpha_{1}, \alpha_{2}\right]$是二维线性空间$V$的一个基. $T$, $S$是$V$中的两个线性变换,且有
+\[
+T\alpha_{1}=\beta_{1}, \quad T\alpha_{2}=\beta_{2}, \quad S(\alpha_{1}+\alpha_{2})=\beta_{1}+\beta_{2}, \quad S(\alpha_{1}-\alpha_{2})=\beta_{1}-\beta_{2},
+\]
+试证$T=S$ (即$S$与$T$是同一个线性变换).
+\end{exercise}~\\
+\noindent\textbf{证明：}\\
+
+ 
+
+\section{第10题}~\\
+
+\begin{exercise}
+(5) \[
+{A}=\left(\begin{array}{ccc}
+7 & -12 & 6 \\
+10 & -19 & 10 \\
+12 & -24 & 13
+\end{array}\right);
+\]
+
+(7) \[
+{A}=\left(\begin{array}{cccc}
+1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1
+\end{array}\right).
+\]
+\end{exercise}~\\
+
+\noindent\textbf{证明：}
+
+
+\section{第11题}
+\begin{exercise}
+设$A$为n阶可逆矩阵，证明:
+(1)$A$的特征值必不为0;
+(2) 若 $\lambda$ 是 $A$ 的特征值, 则 $\dfrac{1}{\lambda}$ 是 $A^{-1}$ 的特征值.
+\end{exercise}~\\
+\noindent\textbf{证明：}\\
+
+
+\section{第13题}
+\begin{exercise}
+一个向量$\zeta$ 不可能是n阶矩阵$A$的不同特征值的特征向量.\\
+\end{exercise}~\\
+\noindent\textbf{解：}\\
+
+
+\section{第15题}
+\begin{exercise}
+下列矩阵中哪些可以对角化?在可以对角化时,写出它的相似对角矩阵及相应的过渡矩阵.
+\begin{enumerate}
+    \item[(1)] $\left(\begin{array}{ccc}-1 & 3 & -1 \\ -3 & 5 & -1 \\ -3 & 3 & 1\end{array}\right)$
+    \item[(6)] $\left(\begin{array}{cccc}0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \\ 1 & 0 & 0 & 0\end{array}\right)$
+\end{enumerate}
+\end{exercise}~\\
+\noindent\textbf{解：}
+
+\section{第16题}
+\begin{exercise}
+设 $A = \begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+       & a_{22} & \cdots & a_{2n} \\
+       &        & \ddots & \vdots \\
+\mathbf{0} & & & a_{nn}
+\end{pmatrix}$ 为上三角形矩阵，证明
+
+(1) 当 $i \neq j$ 时，$a_{ii} \neq a_{jj}$（$i,j = 1,2,\cdots,n$），则 $A$ 可以对角化；
+
+(2) 若 $a_{11} = a_{22} = \cdots = a_{nn}$，而至少有一个 $a_{ij} \neq 0$（$i < j$），则 $A$ 不可能对角化.
+\end{exercise}~\\
+\noindent\textbf{证明：}
+
+\end{document}
+% ===================================================================
+%  文档结束
+% ===================================================================

@@ -1,0 +1,121 @@
+% !TEX program = xelatex
+% ===================================================================
+% 《线性代数》课程作业模板
+% ===================================================================
+%
+%  【学生使用说明】
+%  1. 在下方的【学生信息区】将 "请在此处填写..." 替换为你的真实信息。
+%  2. 注意：以下所有题目均为模板占位符，请自己输入实际的题目，并作答.
+%
+% ===================================================================
+
+
+\documentclass[a4paper, 12pt]{ctexart}
+
+\usepackage{mathdots}
+\usepackage{mathtools} % 加载 mathtools 会自动加载 amsmath
+
+% --- 课程信息 (通常无需修改) ---
+\newcommand{\CourseInfo}{线性代数} % 用于标题行的大标题
+\newcommand{\CourseName}{线性代数·2025秋·第 7 章}               % 用于页眉左边
+\newcommand{\InstructorName}{戴一冕}
+\newcommand{\AssignmentTitle}{第 7 章 \quad n元实二次型}
+
+% ===================================================================
+%  第一步：请在这里填写你的学生信息
+% ===================================================================
+\newcommand{\StudentName}{xxx}
+\newcommand{\StudentID}{xxxxxxx}
+\newcommand{\AssignmentDate}{2025年xx月xx日} % 默认是提交日期
+
+% --- 导入所有配置 (请勿修改) ---
+\input{config.tex}
+
+% ===================================================================
+%  正文开始
+% ===================================================================
+\begin{document}
+
+% --- 生成标题区 ---
+\makeHomeworkTitle
+
+% --- 说明框 ---
+% \begin{tcolorbox}[
+%     hintstyle,
+%     colframe=winered, 
+%     colback=winered!5!white, 
+%     colbacktitle=winered, 
+%     fontupper=\bfseries, 
+%     title={\textbf{重要说明}}
+% ]
+%     以下所有题目均为模板占位符，请自己输入实际的题目，并作答
+% \end{tcolorbox}
+
+% ===================================================================
+%  作业题目区
+% ===================================================================
+\section{第1题}
+
+\begin{exercise}
+分别用配方法与矩阵合同变换方法把下列实二次型化为标准型，并求出所用的坐标变换.~\\
+
+$(3) f = x_{1}x_{2}+x_{2}x_{3}+x_{1}x_{4}$;~\\
+
+$(5) f = x_{1}x_{2}+x_{1}x_{3}+x_{1}x_{4}+x_{2}x_{3}+x_{2}x_{4}+x_{3}x_{4}.$
+
+\end{exercise}~\\
+
+\noindent\textbf{解：}\\
+
+
+\section{第5题}
+\begin{exercise}
+若实二次型 \( f=\sum_{i,j = 1}^{n}  a_{ij}x_i x_j\) 的正负惯性指数分别是 \( k, l(k+l \leq n) \).
+又 \( a_1, a_2, \cdots, a_k \) 是任意 \( k \) 个正数，\( b_1, b_2, \cdots, b_l \) 是任意 \( l \) 个负数，证明这个二次型通过坐标变换必可化成  
+
+\[a_1 y_1^2 + \cdots + a_k y_k^2 + b_1 y_{k+1}^2 + \cdots + b_l y_{k+l}^2.\]
+\end{exercise}~\\
+\noindent\textbf{证明：}~\\
+
+\section{第6题}
+\begin{exercise}
+判断下列二次型是正定二次型，还是负定二次型.~\\
+
+$(1)$ \( f = -5x_1^2 - 6x_2^2 - 4x_3^2 + 4x_1x_2 + 4x_1x_3 \);~\\
+
+$(4)$ \( f = \sum_{i=1}^n x_i^2 + \sum_{1 \leq i < j \leq n} x_i x_j \).
+\end{exercise}~\\
+\noindent\textbf{解：}\\
+
+\section{第7题}
+\begin{exercise}
+求 $\lambda$ 的值，使二次型 $f(x,y,z,w) = \lambda(x^2 + y^2 + z^2) + 2xy - 2yz + 2zx + w^2$ 是正定的，并讨论 $\lambda < 2$ 时的情况.
+\end{exercise}~\\
+\noindent\textbf{解：}\\
+
+\section{第10题}
+\begin{exercise}
+求正交矩阵 \( H \)，使 \( H^T AH \) 成对角矩阵.~\\
+
+$(3)$ \( A = \begin{pmatrix} 0 & 0 & 4 & 1 \\ 0 & 0 & 1 & 4 \\ 4 & 1 & 0 & 0 \\ 1 & 4 & 0 & 0 \end{pmatrix} \);
+
+\end{exercise}~\\
+\noindent\textbf{解：}\\
+
+ 
+
+\section{第11题}~\\
+\begin{exercise}
+用正交变换化下列二次型为标准形:~\\
+
+$(1)$ \( f = x_1^2 + 2x_2^2 + 3x_3^2 - 4x_1x_2 - 4x_2x_3 \);
+
+\end{exercise}~\\
+
+\noindent\textbf{解：}
+
+
+\end{document}
+% ===================================================================
+%  文档结束
+% ===================================================================

@@ -1,0 +1,220 @@
+% !TEX program = xelatex
+% ===================================================================
+% 《线性代数》课程作业模板
+% ===================================================================
+%
+%  【学生使用说明】
+%  1. 在下方的【学生信息区】将 "请在此处填写..." 替换为你的真实信息。
+%  2. 注意：以下所有题目均为模板占位符，请自己输入实际的题目，并作答.
+%
+% ===================================================================
+
+
+\documentclass[a4paper, 12pt]{ctexart}
+
+\usepackage{mathdots}
+\usepackage{mathtools} % 加载 mathtools 会自动加载 amsmath
+
+% --- 课程信息 (通常无需修改) ---
+\newcommand{\CourseInfo}{线性代数} % 用于标题行的大标题
+\newcommand{\CourseName}{线性代数·2025秋·第 3 章}               % 用于页眉左边
+\newcommand{\InstructorName}{戴一冕}
+\newcommand{\AssignmentTitle}{第 3 章 \quad 线性方程组}
+
+% ===================================================================
+%  第一步：请在这里填写你的学生信息
+% ===================================================================
+\newcommand{\StudentName}{xxx}
+\newcommand{\StudentID}{xxxxxxx}
+\newcommand{\AssignmentDate}{2025年xx月xx日} % 默认是提交日期
+
+% --- 导入所有配置 (请勿修改) ---
+\input{config.tex}
+
+% ===================================================================
+%  正文开始
+% ===================================================================
+\begin{document}
+
+% --- 生成标题区 ---
+\makeHomeworkTitle
+
+% --- 说明框 ---
+% \begin{tcolorbox}[
+%     hintstyle,
+%     colframe=winered, 
+%     colback=winered!5!white, 
+%     colbacktitle=winered, 
+%     fontupper=\bfseries, 
+%     title={\textbf{重要说明}}
+% ]
+%     以下所有题目均为模板占位符，请自己输入实际的题目，并作答
+% \end{tcolorbox}
+
+% ===================================================================
+%  作业题目区
+% ===================================================================
+\section{第1题}
+
+\begin{exercise}
+    设向量组$\alpha _{1} ,\alpha _{2} ,\alpha _{3}$线性无关，证明向量组$\alpha _{1} +\alpha _{2},\alpha _{2} +\alpha _{3} ,\alpha _{3} +\alpha _{1}$也线性无关.\\
+      
+\end{exercise}~\\
+
+\noindent\textbf{证明：}\\
+
+
+\section{第2题}
+\begin{exercise}
+已知向量$\alpha _{1} = (2,5,1,3),\alpha _{2} =(10,1,5,10),\alpha _{3} =(4,1,-1,1)$,向量$\alpha $满足等式\[
+3(\alpha_1 - \alpha) + 2(\alpha_2 + \alpha) = 5(\alpha_3 + \alpha),
+\]
+求$\alpha$ .
+\end{exercise}~\\
+\noindent\textbf{解：}~\\
+
+\section{第3题}
+\begin{exercise}
+设 $\alpha_1,\alpha_2,\ldots,\alpha_m,\beta_1,\ldots,\beta_m$ 是同维向量.若 $k_1\alpha_1 + k_2\alpha_2 + \cdots + k_m\alpha_m + k_1\beta_1 + k_2\beta_2 + \cdots + k_m\beta_m = 0$ 成立, 必有 $k_1 = k_2 = \cdots = k_m = 0.$ 问 $\alpha_1,\alpha_2,\ldots,\alpha_m,\beta_1,\ldots,\beta_m$ 是否线性无关?\\
+\end{exercise}~\\
+\noindent\textbf{解：}\\
+
+\section{第5题}
+\begin{exercise}
+举出一个线性相关的向量组的例子，使其中存在非零向量不能用其余向量线性表出.
+\end{exercise}~\\
+\noindent\textbf{解：}\\
+
+\section{第6题}
+\begin{exercise}
+设向量 $\beta$ 能用向量 $\alpha_1, \alpha_2, \ldots, \alpha_m$ 线性表示出，且表示式是唯一的，试用反证法证明向量组 $\alpha_1, \alpha_2, \ldots, \alpha_m$ 必线性无关.\\
+
+\end{exercise}~\\
+\noindent\textbf{证明：}\\
+
+ 
+
+\section{第7题}~\\
+
+\begin{exercise}
+设 $A = (a_{ij})_{m \times n}, B = (b_{ij})_{n \times p},$ 且 $AB = 0,$ 试证若 $A$ 的 $n$ 个列向量线性无关，则 $B = 0;$ 若 $B$ 的 $n$ 个行向量线性无关，则 $A = 0.$\\
+
+\end{exercise}~\\
+
+\noindent\textbf{证明：}
+
+
+\section{第8题}
+\begin{exercise}
+用初等行变换将下列矩阵化成阶梯形矩阵，并求它们的秩：
+\[
+(3)\begin{pmatrix}
+1 & 0 & 0 & 1 & 4 \\
+0 & 1 & 0 & 2 & 5 \\
+0 & 0 & 1 & 3 & 6 \\
+1 & 2 & 3 & 14 & 32 \\
+4 & 5 & 6 & 32 & 77
+\end{pmatrix} \quad 
+\]
+
+\[
+(4)\begin{pmatrix}
+2 & 0 & 3 & 1 & 4 \\
+3 & -5 & 4 & 2 & 7 \\
+1 & 5 & 2 & 0 & 1
+\end{pmatrix} \quad 
+\]
+\end{exercise}~\\
+\noindent\textbf{解：}\\
+
+
+\section{第9题}
+\begin{exercise}
+判断下列向量组是否线性相关，并求出它们的秩:\\
+(2) $\alpha_1 = (1, -2, 3, -4), \alpha_2 = (0, 1, -1, 1), \\
+\alpha_3 = (1, 3, 0, -1), \alpha_4 = (0, -7, 3, 1);$
+
+\end{exercise}~\\
+\noindent\textbf{解：}\\
+
+
+\section{第16题}
+\begin{exercise}
+选择 $\lambda$ 的值使方程组有解，并解之。
+\[
+(1)\begin{cases}
+2x_1 - x_2 + x_3 + x_4 = 1, \\
+x_1 + 2x_2 - x_3 + 4x_4 = 2, \\
+x_1 + 7x_2 - 4x_3 + 11x_4 = \lambda; \\
+\end{cases}
+\]
+
+\end{exercise}~\\
+\noindent\textbf{解：}
+
+\section{第17题}
+\begin{exercise}
+设线性方程组
+\[
+\begin{cases}
+a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1, \\
+a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2, \\
+\vdots \\
+a_{n1}x_1 + a_{n2}x_2 + \cdots + a_{nn}x_n = b_n,
+\end{cases}
+\]
+
+系统矩阵的秩与矩阵
+\[
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} & b_1 \\
+a_{21} & a_{22} & \cdots & a_{2n} & b_2 \\
+\vdots & \vdots & \quad & \vdots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn} & b_n \\
+b_1 & b_2 & \cdots & b_n & 0
+\end{pmatrix}
+\]
+的秩相等.证明这个方程组有解.
+\end{exercise}~\\
+\noindent\textbf{证明：}
+
+\section{第21题}
+\begin{exercise}
+求下列齐次线性方程组的一个基础解系及通解：
+
+(1)
+\[
+\left\{
+\begin{matrix}
+3x_{1}+2x_{2}-5x_{3}+4x_{4}=0,\\
+3x_{1}-x_{2}+3x_{3}-3x_{4}=0,\\
+3x_{1}+5x_{2}-13x_{3}+11x_{4}=0;
+\end{matrix}
+\right.
+\]
+
+(2)
+\[
+\left\{
+\begin{matrix}
+2x_{1}-4x_{2}+5x_{3}+3x_{4}=0,\\
+3x_{1}-6x_{2}+4x_{3}+2x_{4}=0,\\
+4x_{1}-8x_{2}+17x_{3}+11x_{4}=0;
+\end{matrix}
+\right.
+\]
+
+\end{exercise}~\\
+\noindent\textbf{解：}
+\section{第27题}
+\begin{exercise}
+设 $A$ 为 $n$ 阶矩阵，且 $A^2 = A$，证明
+\[
+r_{A} +r_{(A-E)}  = n.
+\]
+\end{exercise}~\\
+\noindent\textbf{证明：}
+\end{document}
+% ===================================================================
+%  文档结束
+% ===================================================================
